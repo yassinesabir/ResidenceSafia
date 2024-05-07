@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "584979997007",
+    "project_id": "residencesafia-cca5d",
+    "storage_bucket": "residencesafia-cca5d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:584979997007:android:4678a1bb8dc2847a2e253a",
+        "android_client_info": {
+          "package_name": "com.example.residencesafia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzx-u6raqXVPpOfyNQVzuAskG6fy3hPM0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
