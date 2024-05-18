@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/arizonia</item>
+        <item>@font/armata</item>
+        <item>@font/belgrano</item>
+        <item>@font/dr_sugiyama</item>
+        <item>@font/faster_one</item>
+        <item>@font/give_you_glory</item>
+        <item>@font/kaushan_script</item>
+        <item>@font/meddon</item>
+        <item>@font/pacifico</item>
+    </array>
+</resources>
