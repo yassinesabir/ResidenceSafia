@@ -8,6 +8,17 @@
     <string name="signin">Se connecter</string>
     <string name="signup">S\'inscrire</string>
     <string name="SignUpHint">Vous n\'avez pas de compte?</string>
+    <string name="googleMaps">Google Maps</string>
+    <string name="MAPS_API_KEY">AIzaSyCqaY3mGiSnnKCkfDqvGA-FjglqRDXWOXI</string>
+    <string name="title">Vivez la tranquillité résidentielle</string>
+    <string name="title2">SUIVI DES FACTURES, ACTUALITÉS DE LA</string>
+    <string name="title3">RÉSIDENCE, TOUT SOUS CONTRÔLE AVEC</string>
+    <string name="title4">NOTRE APPLICATION !</string>
+    <string name="logo">Logo</string>
+    <string name="image">Image</string>
+    <string name="Menu_Home">Acceuil</string>
+    <string name="Menu_Location">Localisation</string>
+    <string name="Menu_Bill">Facture</string>
 </resources>
 
 

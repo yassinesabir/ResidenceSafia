@@ -70,14 +70,14 @@ public class Register extends AppCompatActivity {
     }
 
     private void updateUI(FirebaseUser user) {
-        if (user != null) {
-            // User is signed in, update UI accordingly
-            // For example, you can navigate to the main activity or show a welcome message
+        if (user != null) { // Création de compte avec succes
+            Toast.makeText(getApplicationContext(), "Création de compte avec succes.",
+                    Toast.LENGTH_SHORT).show();
             startActivity(new Intent(this, Login.class));
             finish();
-        } else {
-            // User is signed out, update UI accordingly
-            // For example, you can show the sign-in form again
+        } else { // échec de création de compte
+            Toast.makeText(getApplicationContext(), "échec de création de compte.",
+                    Toast.LENGTH_SHORT).show();
             signInButton.setVisibility(View.VISIBLE);
             firstName.setVisibility(View.VISIBLE);
             lastName.setVisibility(View.VISIBLE);
