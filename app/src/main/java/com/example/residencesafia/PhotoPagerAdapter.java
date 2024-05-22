@@ -17,7 +17,6 @@ public class PhotoPagerAdapter extends PagerAdapter {
         this.context = context;
         this.photos = photos;
     }
-
     @Override
     public int getCount() {
         return photos.length;

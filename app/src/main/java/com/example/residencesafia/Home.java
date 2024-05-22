@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import androidx.cardview.widget.CardView;
-
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -46,9 +45,18 @@ public class Home extends AppCompatActivity {
                 startActivity(intent);
                 return true;
             } else if (itemId == R.id.facture) {
+                Intent intent = new Intent(Home.this, FactureActivity.class);
+                startActivity(intent);
                 return true;
             }
             return false;
         });
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        // Réinitialiser la sélection du menu à l'élément "home"
+        bottomMenu.setSelectedItemId(R.id.itHome);
     }
 }

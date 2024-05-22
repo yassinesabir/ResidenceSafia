@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permisssion.INTERNET"/>
-    <uses-permission android:name="android.permisssion.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -17,6 +17,7 @@
         tools:targetApi="31">
         <activity android:name=".Register" />
         <activity android:name=".GoogleMaps" />
+        <activity android:name=".FactureActivity" />
         <activity android:name=".Home" />
         <activity
             android:name=".Login"
@@ -32,7 +33,7 @@
         </activity>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/MAPS_API_KEY" />
+            android:value="AIzaSyCqaY3mGiSnnKCkfDqvGA-FjglqRDXWOXI" />
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

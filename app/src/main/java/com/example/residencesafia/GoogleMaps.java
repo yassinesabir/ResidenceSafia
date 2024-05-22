@@ -18,7 +18,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class GoogleMaps extends AppCompatActivity implements OnMapReadyCallback,LocationListener {
+public class GoogleMaps extends AppCompatActivity implements OnMapReadyCallback {
     private static final int REQUEST_LOCATION_PERMISSION = 1;
     private GoogleMap map;
     MapView mapView;
@@ -33,13 +33,28 @@ public class GoogleMaps extends AppCompatActivity implements OnMapReadyCallback,
         mapView.getMapAsync(this);
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
     }
+
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
         map = googleMap;
         LatLng place = new LatLng(33.609599, -7.530662);
         map.addMarker(new MarkerOptions().position(place).title("Résidence Safia"));
         map.moveCamera(CameraUpdateFactory.newLatLngZoom(place, 15));
-        if (ActivityCompat.checkSelfPermission(this,
+    }
+}
+
+
+
+
+
+
+
+
+
+/*
+    ,LocationListener
+
+    if (ActivityCompat.checkSelfPermission(this,
                 android.Manifest.permission.ACCESS_FINE_LOCATION) !=
                 PackageManager.PERMISSION_GRANTED
                 && ActivityCompat.checkSelfPermission(this,
@@ -61,45 +76,4 @@ public class GoogleMaps extends AppCompatActivity implements OnMapReadyCallback,
         map.animateCamera(CameraUpdateFactory.zoomTo(15));
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-        fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
-        getLastLocation();
  */
-
-
-
-/*
-private void getLastLocation() {
-        if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(this,new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, FINE_PERMISSION_CODE);
-            return;
-        }
-        Task<Location> task = fusedLocationProviderClient.getLastLocation();
-        task.addOnSuccessListener(new OnSuccessListener<Location>() {
-            @Override
-            public void onSuccess(Location location) {
-                if(location != null){
-                    currentLocation = location;
-                }
-            }
-        });
-    }
- */
-
